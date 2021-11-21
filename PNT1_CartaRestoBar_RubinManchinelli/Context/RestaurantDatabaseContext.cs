@@ -7,8 +7,12 @@ using PNT1_CartaRestoBar_RubinManchinelli.Models;
 
 namespace PNT1_CartaRestoBar_RubinManchinelli.Context
 {
-    public class RestaurantDatabaseContext
+    public class RestaurantDatabaseContext : DbContext
     {
-           
+        public RestaurantDatabaseContext(DbContextOptions<RestaurantDatabaseContext> options) : base(options)
+        {
+
+        }
+        public DbSet<Restaurant> Restaurant { get; set; }
     }
 }
