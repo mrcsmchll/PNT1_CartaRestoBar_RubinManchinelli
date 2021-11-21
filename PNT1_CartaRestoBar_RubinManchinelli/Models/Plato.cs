@@ -17,12 +17,12 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
             this.esAptoVegano = esAptoVegano;
         }
 
-        private int Id;
-        private string Nombre;
-        private double Precio;
-        private string Descripcion;
-        private bool esAptoCeliaco;
-        private bool esAptoVegano;
+        private int Id { get; set; }
+        private string Nombre { get; set; }
+        private double Precio { get; set; }
+        private string Descripcion { get; set; }
+        private bool esAptoCeliaco { get; set; }
+        private bool esAptoVegano { get; set; }
 
     }
 

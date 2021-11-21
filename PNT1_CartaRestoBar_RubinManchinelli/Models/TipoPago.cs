@@ -1,6 +1,13 @@
-﻿namespace PNT1_CartaRestoBar_RubinManchinelli.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
-    internal class TipoPago
+    public enum TipoPago
     {
+        Efectivo,
+        TarjetaCredito
     }
 }
