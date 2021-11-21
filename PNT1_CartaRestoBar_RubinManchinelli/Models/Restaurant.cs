@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,10 +9,12 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
     public class Restaurant
     {
-        private String nombre;
-        private List<Plato> menu;
-        private List<Pedido> pedidos;
-        private List<Cliente> clientes;
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        private String nombre { get; set; }
+        private List<Plato> menu { get; set; }
+        private List<Pedido> pedidos { get; set; }
+        private List<Cliente> clientes { get; set; }
 
         public Restaurant(string nombre, List<Plato> menu, List<Pedido> pedidos, List<Cliente> clientes)
         {
