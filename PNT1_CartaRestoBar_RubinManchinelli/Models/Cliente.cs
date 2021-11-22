@@ -7,16 +7,29 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
     public class Cliente
     {
+        public Cliente() { }
+
         public Cliente(int id, string nombre, string apellido, int numTelefono, string email, TipoPago tipoPago)
         {
-            this.Id = id;
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.NumTelefono = numTelefono;
-            this.Email = email;
-            this.TipoPago = tipoPago;
+            Id = id;
+            Nombre = nombre;
+            Apellido = apellido;
+            NumTelefono = numTelefono;
+            Email = email;
+            TipoPago = tipoPago;
         }
 
+
+        /*       public Cliente(int id, string nombre, string apellido, int numTelefono, string email, TipoPago tipoPago)
+               {
+                   this.Id = id;
+                   this.Nombre = nombre;
+                   this.Apellido = apellido;
+                   this.NumTelefono = numTelefono;
+                   this.Email = email;
+                   this.TipoPago = tipoPago;
+               }
+        */
         private int Id { get; set; }
         private string Nombre { get; set; }
         private string Apellido { get; set; }

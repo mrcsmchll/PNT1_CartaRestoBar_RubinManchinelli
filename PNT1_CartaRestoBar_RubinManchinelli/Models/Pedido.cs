@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
+
     public class Pedido
     {
         public Pedido(int id, Cliente c)
