@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
-                <select asp-for="platos" class="form-control" asp-items="Html.GetEnumSelectList<>()">
+                <select asp-for="platos" class="form-control" asp-items="Html.GetEnumSelectList<TipoPlato>()">
                     <option selected="selected" value="">Please select</option>
                 </select>
             </div>
