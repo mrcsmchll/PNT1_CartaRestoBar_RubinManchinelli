@@ -11,10 +11,10 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        private String nombre { get; set; }
-        private List<Plato> menu { get; set; }
-        private List<Pedido> pedidos { get; set; }
-        private List<Cliente> clientes { get; set; }
+        public String nombre { get; set; }
+        public List<Plato> menu { get; set; }
+        public List<Pedido> pedidos { get; set; }
+        public List<Cliente> clientes { get; set; }
 
         public Restaurant(string nombre, List<Plato> menu, List<Pedido> pedidos, List<Cliente> clientes)
         {

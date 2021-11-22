@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
-
     public class Pedido
     {
+        public Pedido(){}
         public Pedido(int id, Cliente c)
         {
             this.Id = id;
@@ -16,6 +17,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 
         }
 
+        
         public int Id { get; set; }
         public Cliente Cliente { get; set; }
 
