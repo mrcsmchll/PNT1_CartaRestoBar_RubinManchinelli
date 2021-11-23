@@ -7,11 +7,9 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
     public enum TipoPlato
     {
-        Pizza,
-        Pasta,
-        Carne,
-        Pescado,
-        Frutas
+        Entrada,
+        Postre,
+        Principal
 
     }
 }

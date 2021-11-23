@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,22 +8,40 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 {
     public class Plato
     {
-        public Plato(int id, string nombre, double precio, string descripcion, bool esAptoCeliaco, bool esAptoVegano)
+
+        public Plato()
+        {
+
+        }
+
+        public Plato(int id, TipoPlato tipo, string nombre, double precio, bool esAptoCeliaco, bool esAptoVegano)
         {
             this.Id = id;
+            this.SetTipo(tipo);
             this.Nombre = nombre;
             this.Precio = precio;
-            this.Descripcion = descripcion;
             this.esAptoCeliaco = esAptoCeliaco;
             this.esAptoVegano = esAptoVegano;
         }
 
-        private int Id { get; set; }
-        private string Nombre { get; set; }
-        private double Precio { get; set; }
-        private string Descripcion { get; set; }
-        private bool esAptoCeliaco { get; set; }
-        private bool esAptoVegano { get; set; }
+        public int Id { get; set; }
+
+        private TipoPlato tipo;
+
+        public TipoPlato GetTipo()
+        {
+            return tipo;
+        }
+
+        public void SetTipo(TipoPlato value)
+        {
+            tipo = value;
+        }
+
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
+        public bool esAptoCeliaco { get; set; }
+        public bool esAptoVegano { get; set; }
 
     }
 

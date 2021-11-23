@@ -27,6 +27,8 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
         public string Apellido { get; set; }
         public int NumTelefono { get; set; }
         public string Email { get; set; }
+
+        [EnumDataType(typeof(TipoPago))]
         public TipoPago TipoPago { get; set; }
 
 

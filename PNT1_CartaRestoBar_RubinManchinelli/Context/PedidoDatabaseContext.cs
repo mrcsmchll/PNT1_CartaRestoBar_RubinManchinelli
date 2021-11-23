@@ -14,5 +14,29 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Context
 
         }
         public DbSet<Pedido> Pedidos { get; set; }
+
+        private DbSet<Cliente> clientes;
+
+        public DbSet<Cliente> GetClientes()
+        {
+            return clientes;
+        }
+
+        public void SetClientes(DbSet<Cliente> value)
+        {
+            clientes = value;
+        }
+
+        private DbSet<Plato> platos;
+
+        public DbSet<Plato> GetPlatos()
+        {
+            return platos;
+        }
+
+        public void SetPlatos(DbSet<Plato> value)
+        {
+            platos = value;
+        }
     }
 }
