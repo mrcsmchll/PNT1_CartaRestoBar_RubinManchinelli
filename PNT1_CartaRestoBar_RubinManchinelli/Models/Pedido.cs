@@ -28,9 +28,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
         [Required]
         public int Id { get; set; }
 
-        [Required]
-        [Display(Name = "Datos del Cliente")]
-        public Cliente Cliente { get;  set; }
+  
         [Required]
         [Display(Name = "Nombre de Cliente")]
         public string NombreCliente { get; set; }
@@ -39,9 +37,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
         [Display(Name = "Descripcion del Pedido")]
         public string NomPedido { get; set; }
 
-        [Required]
-        [Display(Name = "Plato seleccionado")]
-        public Plato Plato { get; set; }
+       
         /*
         public string GetNombreCliente()
         {
@@ -60,6 +56,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
         // List<Plato> platos = new List<Plato>();
 
         [Display(Name ="Precio")]
+        [Required]
         public float Precio { get; set; }      
     }
 

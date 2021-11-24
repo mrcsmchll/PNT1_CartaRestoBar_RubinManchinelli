@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PNT1_CartaRestoBar_RubinManchinelli.Context;
 
 namespace PNT1_CartaRestoBar_RubinManchinelli.Migrations
 {
     [DbContext(typeof(PedidoDatabaseContext))]
-    partial class PedidoDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20211124223535_PNT1_CartaRestoBar_RubinManchinelli.Context.PedidoDatabaseContext5")]
+    partial class PNT1_CartaRestoBar_RubinManchinelliContextPedidoDatabaseContext5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
