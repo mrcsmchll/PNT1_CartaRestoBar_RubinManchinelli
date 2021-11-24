@@ -25,14 +25,23 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
       */
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Required]
         public int Id { get; set; }
 
+        [Required]
         [Display(Name = "Datos del Cliente")]
         public Cliente Cliente { get;  set; }
+        [Required]
+        [Display(Name = "Nombre de Cliente")]
         public string NombreCliente { get; set; }
 
+        [Required]
         [Display(Name = "Descripcion del Pedido")]
         public string NomPedido { get; set; }
+
+        [Required]
+        [Display(Name = "Plato seleccionado")]
+        public Plato Plato { get; set; }
         /*
         public string GetNombreCliente()
         {
@@ -44,9 +53,9 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
             nombreCliente = Cliente.Nombre;
         }
         */
-        [Display(Name ="Tipo de Plato")]
+        [Display(Name = "Tipo de Plato")]
         [EnumDataType(typeof(TipoPlato))]
-        public TipoPlato TipoPlatos;
+        public TipoPlato TipoPlatos { get; set; }
 
         // List<Plato> platos = new List<Plato>();
 

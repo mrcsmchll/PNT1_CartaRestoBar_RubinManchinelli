@@ -54,7 +54,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id")] Pedido pedido)
+        public async Task<IActionResult> Create([Bind("Id,NombreCliente,NomPedido,TipoPlatos,Precio")] Pedido pedido)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id")] Pedido pedido)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NombreCliente,NomPedido,TipoPlatos,Precio")] Pedido pedido)
         {
             if (id != pedido.Id)
             {

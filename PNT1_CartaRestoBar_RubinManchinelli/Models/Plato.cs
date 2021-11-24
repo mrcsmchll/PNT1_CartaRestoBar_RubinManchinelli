@@ -26,7 +26,7 @@ namespace PNT1_CartaRestoBar_RubinManchinelli.Models
 
         public int Id { get; set; }
 
-        private TipoPlato tipo;
+        public TipoPlato tipo;
 
         public TipoPlato GetTipo()
         {
